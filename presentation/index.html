@@ -1,0 +1,138 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
+		<link rel="stylesheet" href="css/w3.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!--Title-->
+				<section>
+					<h2>Ereignisgesteuerte Applikationen / Systeme</h2>
+					<h4>fancy subtitle</h4>
+				</section>
+				<!--Was-->
+				<section>
+					<section>
+						<h3>Die Mitspieler</h3>
+					
+						<div class="w3-container w3-round-xlarge w3-teal w3-padding w3-border fragment fade-up" style="float:left">Ausl&ouml;&szlig;er</div>
+						<div class="w3-container w3-round-xlarge w3-grey w3-padding w3-center fragment fade-up" style="margin-left:5%; float:left;">
+							<i class="fa fa-long-arrow-right"></i>
+							Ereignis (Event)
+							<i class="fa fa-long-arrow-right"></i>
+						</div>
+						<div style="float:right">
+							<span class="fragment fade-up">
+								<div class="w3-container w3-round-xlarge w3-indigo w3-padding w3-border">Empf&auml;nger</div>
+							</span>
+							<span class="fragment fade-up">
+								<div class="w3-container w3-round-xlarge w3-indigo w3-padding w3-border">Empf&auml;nger</div>
+								<div class="w3-container w3-round-xlarge w3-indigo w3-padding w3-border">Empf&auml;nger</div>
+								<div class="w3-container w3-round-xlarge w3-indigo w3-padding w3-border">Empf&auml;nger</div>
+							</span>
+						</div>
+					</section>
+
+					<section>
+						<h2>Ausl&ouml;&szlig;er</h2>
+						<div class="w3-text-grey">(sender)</div>
+						<ol>
+							<li class="fragment fade-up">stellt ein oder mehere Events bereit</li>
+							<li class="fragment fade-up">ist eine konkrete Instanz einer Klasse</li>
+							<li class="fragment fade-up">sollte &ouml;ffentlich sein</li>
+						</ol>						
+						<div class="w3-container w3-center fragment fade-up">
+							<img src="img/megafon.png" width="350px" />
+						</div>	
+						<div class="w3-container w3-center fragment fade-up" style="position:relative; top:-350px;">
+							<img src="img/private.jpg" width="300px" />
+						</div>
+					</section>
+
+					<section>
+						<h2>Events</h2>
+						<ol>
+							<li class="fragment fade-up">hat eine konkrete Quelle (sender)</li>
+							<li class="fragment fade-up"><strong>keinen</strong> dedizierten Emp&auml;nger (subscriber)</li>
+							<li class="fragment fade-up">m&uuml;&szlig;en vom Emp&auml;nger aboniert werden</li>
+						</ol>
+
+						<div class="w3-container w3-margin-top fragment fade-up">
+								<span style="float:left">eher nicht wie</span>
+								<span style="float:right">sondern wie</span>
+						</div>
+						<div class="w3-container fragment fade-up" style="position:relative; ">
+							<img src="img/Package.jpg" width="350px" style="float:left" />
+							<img src="img/bboard.jpeg" width="350px" style="float:right" />
+						</div>
+						<div class="w3-container fragment fade-up" style="position:relative; top:-300px; left:30px;">
+							<img src="img/sniper.jpg" width="400px" style="float:left;" />
+							<img src="img/dog.jpg" width="450px" style="float:right;" />
+						</div>
+					</section>
+					
+					<section>
+						<h2>Empf&auml;nger</h2>
+						<div class="w3-text-grey">(subscriber, reciver)</div>
+						<ol>
+							<li class="fragment fade-up">stellt Funktionen die auf ein oder mehrere Events reagieren</li>
+							<li class="fragment fade-up">ist eine konkrete Instanz einer Klasse</li>
+						</ol>
+					</section>
+				</section>
+				
+				<section>
+					<img src="img/code.jpg" />
+				</section>
+
+				<section>
+					<section>
+						<h2>Ablauf <i class="fa fa-sort-alpha-asc" aria-hidden="true"></i></h2>
+					</section>
+					
+					<section>
+						<div>
+							<span class="w3-teal">sender</span>
+							<span class="w3-indigo">subscriber</span>
+						</div>
+						<div>
+							<div class="w3-teal fragment fade-up">Event &quot;Beispielevent&quot; werfen</div>
+							<div class="w3-indigo fragment fade-up">Eventhandler zu &quot;Beispielevent&quot; starten</div>
+							<div class="w3-indigo fragment fade-up">Eventhandler arbeitet</div>
+							<div class="w3-indigo fragment fade-up">Eventhandler beendet</div>
+							<div class="w3-teal fragment fade-up">&quot;Testevent&quot; werfen</div>
+							<div class="w3-indigo fragment fade-up">Eventhandler zu &quot;Testevent&quot; starten</div>
+							<div class="w3-indigo fragment fade-up">Eventhandler arbeitet</div>
+							<div class="w3-indigo fragment fade-up">Eventhandler beendet</div>
+						</div>
+						<h3 class="w3-text-red fragment fade-up">Serielle Verarbeitung!</h3>
+					</section>
+					
+					<section>
+						<div>
+							<span class="w3-teal">sender</span>
+							<span class="w3-indigo">subscriber</span>
+						</div>
+						<div>
+							<div class="w3-teal fragment fade-up">Event &quot;Beispielevent&quot; werfen</div>								
+							<div class="w3-indigo fragment fade-up">Eventhandler zu &quot;Beispielevent&quot; startet neuen Thread</div>
+							<div class="w3-teal fragment fade-up">&quot;Testevent&quot; werfen</div>
+							<div class="w3-indigo fragment fade-up">Thread zu &quot;Testevent&quot; beendet</div>
+							<div class="w3-indigo fragment fade-up">Thread zu &quot;Beispielevent&quot; beendet</div>
+						</div>
+						<h3 class="w3-text-green fragment fade-up">Parallele Verarbeitung!</h3>
+					</section>
+					
+				</section>
+
+			</div>
+		</div>
+		<script src="js/reveal.js"></script>
+		<script>
+			Reveal.initialize({ slideNumber: true });
+		</script>
+	</body>
+</html>

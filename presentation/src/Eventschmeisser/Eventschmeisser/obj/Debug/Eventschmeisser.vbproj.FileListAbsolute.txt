@@ -1,0 +1,10 @@
+C:\Users\Info\Desktop\presentation\src\Eventschmeisser\Eventschmeisser\bin\Debug\Eventschmeisser.exe.config
+C:\Users\Info\Desktop\presentation\src\Eventschmeisser\Eventschmeisser\bin\Debug\Eventschmeisser.exe
+C:\Users\Info\Desktop\presentation\src\Eventschmeisser\Eventschmeisser\bin\Debug\Eventschmeisser.pdb
+C:\Users\Info\Desktop\presentation\src\Eventschmeisser\Eventschmeisser\bin\Debug\Eventschmeisser.xml
+C:\Users\Info\Desktop\presentation\src\Eventschmeisser\Eventschmeisser\obj\Debug\Eventschmeisser.vbprojResolveAssemblyReference.cache
+C:\Users\Info\Desktop\presentation\src\Eventschmeisser\Eventschmeisser\obj\Debug\Eventschmeisser.Resources.resources
+C:\Users\Info\Desktop\presentation\src\Eventschmeisser\Eventschmeisser\obj\Debug\Eventschmeisser.vbproj.GenerateResource.Cache
+C:\Users\Info\Desktop\presentation\src\Eventschmeisser\Eventschmeisser\obj\Debug\Eventschmeisser.exe
+C:\Users\Info\Desktop\presentation\src\Eventschmeisser\Eventschmeisser\obj\Debug\Eventschmeisser.xml
+C:\Users\Info\Desktop\presentation\src\Eventschmeisser\Eventschmeisser\obj\Debug\Eventschmeisser.pdb
